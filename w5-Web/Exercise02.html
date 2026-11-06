@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navigation Bar</title>
+</head>
+
+
+<style>
+    body{
+        margin: 0px;
+        padding: 0px;
+
+    }
+    .navbar{
+        background-color: black;
+        padding: 20px;
+        display: flex;
+        justify-content: flex-start;
+       
+        gap: 32px;
+        
+    }
+    .item{
+        width: 60px;
+        text-align: center;
+        color: white;
+        border: 1px solid black;
+        border-radius: 10px;
+        border: none;
+        font-size: 20px;
+
+        cursor: pointer;
+
+        
+          
+    }
+    .item:hover{
+        background-color: gray;
+        border: 1px solid gray;
+        box-shadow: 2px 2px 2px solid gray;
+        border-radius: 10px;
+        padding: 5px;
+        
+    }
+        
+    
+    .image{
+       
+       
+        border-radius: 50%;
+        max-width: 50px;
+        max-width: 50px;
+
+
+    }
+    .image-navbar{
+        display: flex;
+        justify-content: flex-start;
+        margin-right: auto;
+    }
+    .mobile-logo{
+        display: none;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+        .item{
+            display: none;
+        }
+        .mobile-logo{
+            display: block;
+        }
+    }
+    
+        
+    
+</style>
+<body>
+
+
+    <div class="navbar">
+        <div class="image-navbar">
+            <img  class="image" src="https://res.cloudinary.com/t6wyjwqt/image/upload/v1788923787/798105757_122143507389206811_7893562108227785372_n.jpg" alt="GOlang">
+
+        </div>
+       
+        <div class="item">Home</div>
+        <div class="item">About</div>
+        <div class="item">Service</div>
+        <div class="item">Contact</div>
+        <img class="mobile-logo" src="https://res.cloudinary.com/t6wyjwqt/image/upload/v1793694183/java-svgrepo-com_2.svg" alt="Java">
+    </div>
+
+   
+    
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 4 - Media Query</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .wrapper {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .small {
+            display: block;
+            background-color: tomato;
+            color: white;
+            padding: 10px;
+        }
+
+        .big {
+            display: none;
+            background-color: #80d000;
+            color: white;
+            padding: 10px;
+        }
+
+        /* Desktop screen */
+        @media only screen and (min-width: 600px) {
+            .small {
+                display: none;
+            }
+
+            .big {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="content">
+            <span class="small">I'm SMALL 😥</span>
+            <span class="big">I'm BIG 😱</span>
+        </div>
+    </div>
+
+</body>
+</html>
